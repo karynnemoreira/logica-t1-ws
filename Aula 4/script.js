@@ -69,11 +69,20 @@ instrutores.splice(2,1) //à partir do índice 1, remova 1 item
 //instrutores.splice(2,3) //à partir do índice 2, remova 3 itens
 //console.log(instrutores)
 
+
 //SLICE, retorna numa cópia do array sem alterar o original. Começando pelo índice inicial (inclusivo) e indo até o índice final (exclusivo).
 
-console.log(instrutores)
+//console.log(instrutores)
 //['Karynne', 'Carol', 'Marina', 'Fernanda', 'João', 'Samuel']
 
-console.log(instrutores.slice(0,2))
-console.log(instrutores.slice(0,3))
+//console.log(instrutores.slice(0,2))
+//console.log(instrutores.slice(0,3))
 
+
+//              0       1        2        3
+let carros = ["uno", "palio", "siena", "doblo"];
+
+console.log(carros)
+
+console.log(carros.slice(1,2)) //do índice 1 até índice 2 (para no índice 2) //['palio']
+console.log(carros.slice(1,3)) //do índice 1 até  índice 3 (para no índice 3) ['palio', 'siena']
