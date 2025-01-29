@@ -152,27 +152,26 @@ console.log(diminuir(7, 2));
 const arrowFunction = (n1, n2) => n1 + n2;
 console.log(arrowFunction(10, 6));
 
-
 //Declarando uma arrowFunction dentro de uma outra função
 
 function funcaoPai() {
   const arrow = () => {
     console.log("oi");
-  };
-
-  arrow();
+  }; //Nesse caso, não teria necessidade das {}
+  arrow(); //// Chamando a arrow function
 }
 
-funcaoPai();
+funcaoPai(); //// Executando a função principal
+
+// Aqui, a funcaoPai define uma arrow function chamada arrow, que simplesmente imprime "Oi!" no console. Depois, ela chama arrow(), fazendo com que a mensagem apareça.
+
+
 
 //Exemplo 2
 
-function TranquiloKaka() {
-  const DeBoas = () => {
-    const messagem = "Tchau Kaka!, até quarta";
-    console.log(messagem);
-  };
-
-  DeBoas();
+function tranquiloKaka() {
+  const deBoas = () => console.log("Tchau Kaka!, até quarta");
+  deBoas(); // Chamando a arrow function
 }
-TranquiloKaka();
+
+tranquiloKaka(); // Executando a função principal
